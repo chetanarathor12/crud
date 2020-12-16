@@ -1,0 +1,29 @@
+<html>
+    <h1></h1>
+        <form action="/router/product/user" method="get">
+            <div class="form-group"></div>
+            
+          <table>
+            <tr>
+              <thead>
+              <td>Name</td>
+           
+              <td>Login</td>
+              <td>Password</td></tr>
+            </thead>
+            <tbody>
+                <% user.forEach(function(users){ %>
+                    <tr>
+                        <td><%= users.name %></td>
+                        <td><%= users.login %></td>
+                        <td><%= users.password %></td>
+                        
+                    </tr>
+
+               <% });%>
+            </tbody>
+
+          </table>
+        </form>
+    
+</html>
